@@ -13,7 +13,7 @@ COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 # Copy local code to the container image.
-WORKDIR /APP
+WORKDIR /app
 COPY . .
 RUN chmod +x chromedriver start.sh
 ENV PORT=80
